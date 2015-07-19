@@ -1,0 +1,73 @@
+/*CONTENT***************************
+
+	*BASIC
+
+*/
+
+/*BASIC************************************************************
+*******************************************************************/
+body {
+	color: #444;
+}
+
+header {
+	border: 1px solid #d6d6d6;
+	padding: 2em;
+	padding-bottom: 10px;
+	overflow: hidden;
+}
+
+img {
+	max-width: 100%;
+}
+
+.page {
+	margin-top: 1.5em;
+}
+
+
+
+/*BUSINESS-CARD*****************************************************
+*******************************************************************/
+.business-card__logo {
+	float: left;
+	width: 100px;
+	margin-right: 2em;
+}
+
+.business-card__info {
+	float: left;
+	max-width: 600px;
+}
+
+	.business-card__info div {
+		display: inline;
+		float: left;
+		margin-right: 2em;
+	}
+
+
+
+/*ICONS*************************************************************
+*******************************************************************/
+.icon {
+	display: inline-block;
+	background-image: url("../images/sprite.png");
+}
+
+.icon-container {
+	clear: both;
+	float: right;
+}
+
+.icon-edit {
+	width: 49px;
+	height: 52px;
+	background-position: 0 -97px;
+}
+
+.icon-arrow {
+	width: 85px;
+	height: 47px;
+	background-position: 0 -45px;
+}
