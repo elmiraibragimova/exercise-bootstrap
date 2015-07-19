@@ -14,7 +14,12 @@ header {
 	border: 1px solid #d6d6d6;
 	padding: 2em;
 	padding-bottom: 10px;
+	margin-bottom: 2em;
 	overflow: hidden;
+}
+
+h1 {
+	font-size: 2em;
 }
 
 img {
@@ -24,6 +29,17 @@ img {
 .page {
 	margin-top: 1.5em;
 }
+
+.centered {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+.padding-container {
+	padding: 1.5em 15px;
+}
+
 
 
 
@@ -55,9 +71,14 @@ img {
 	background-image: url("../images/sprite.png");
 }
 
-.icon-container {
+.icon-container--floated-r {
 	clear: both;
 	float: right;
+}
+
+.icon-container--floated-l {
+	clear: both;
+	float: left;
 }
 
 .icon-edit {
@@ -70,4 +91,80 @@ img {
 	width: 85px;
 	height: 47px;
 	background-position: 0 -45px;
+}
+
+.icon-arrow-down {
+	width: 50px;
+	height: 20px;
+	background-position: 0 -281px;
+	cursor: pointer;
+
+	position: relative;
+	top: 3px;
+}
+
+.icon-clock,
+.icon-plus {
+	width: 58px;
+	height: 58px;
+}
+
+.icon-clock {
+	background-position: 0 -155px;
+}
+
+.icon-plus {
+	background-position: 0 -218px;
+}
+
+
+/*TABLES************************************************************
+*******************************************************************/
+.order-table {
+	text-align: center;
+	margin-bottom: 15em;
+}
+
+	.order-table tr td:first-child,
+	.order-table tr th:first-child {
+		border-left-color: transparent;
+	}
+
+	.order-table tr td:last-child,
+	.order-table tr th:last-child {
+		border-right-color: transparent;
+	}
+
+	.order-table tr:last-child td {
+		border-bottom-color: transparent;
+	}
+
+	.order-table th {
+		background-color: #f2f2f2;
+		text-align: center;
+	}
+
+.group-row td {
+	color: #939393;
+}
+
+	.group-row td:first-child {
+		text-align: left;
+		padding-left: 2.5em;
+		border-right-color: transparent;
+	}
+
+	.group-row td:nth-child(n) {
+		border-bottom-color: transparent;
+		padding-top: 3px;
+		padding-bottom: 3px;
+	}
+
+		
+
+.content {
+	border: 1px solid #ddd;
+	padding-bottom: 1.5em;
+	margin-bottom: 1.5em;
+	overflow: hidden;
 }

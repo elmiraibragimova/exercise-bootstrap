@@ -6,17 +6,19 @@
         <meta name="description" content="">
         <title></title>
         <link href="static/css/reset.css" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
         <link href="static/css/styles.css" rel="stylesheet">
         <link href="static/css/media-queries.css" rel="stylesheet">
 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     </head>
     <body>
         <div class="page">
             <section class="main">
                 <div class="container">
                     <header>
-                        <a href="#" class="icon-container">
+                        <a href="#" class="icon-container--floated-r">
                             <span class="icon icon-arrow"></span>
                         </a>
                         <div class="business-card">
@@ -35,12 +37,179 @@
                                     <p>Web: <a href="#">www.tize.com</a></p>
                                 </div>
                             </div>
-                            <a href="#" class="icon-container">
+                            <a href="#" class="icon-container--floated-r">
                                 <span class="icon icon-edit"></span>
                                 <span class="icon-inscription">Edit</span>
                             </a>
                         </div>
                     </header>
+                    <section class="content">
+                        <div class="padding-container clearfix">
+                            <a href="#" class="icon-container--floated-l">
+                                <span class="icon icon-clock"></span>
+                                <span class="icon-inscription">Show past orders</span>
+                            </a>
+                            <h1 class="main-heading">Current Orders</h1>
+                            <a href="#" class="icon-container--floated-r">
+                                <span class="icon icon-plus"></span>
+                                <span class="icon-inscription">Add new order</span>
+                            </a>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table table-bordered order-table">
+                                <tr>
+                                    <th>Status</th>
+                                    <th>Date Added</th>
+                                    <th>Item Name</th>
+                                    <th>Equipments</th>
+                                    <th>Qty</th>
+                                    <th>Price</th>
+                                    <th>Contacts</th>
+                                    <th>Address</th>
+                                </tr>
+                                <tr>
+                                    <td>Pass</td>
+                                    <td>03/15/2015</td>
+                                    <td>IWD102343</td>
+                                    <td>OVEN2123</td>
+                                    <td>1,000</td>
+                                    <td>92,400</td>
+                                    <td><a href="#">Carter Wong</a></td>
+                                    <td>234 Street 14Avenu</td>
+                                </tr>
+                                <tr class="group-row">
+                                    <td colspan="7">
+                                        03/19/2015 Qty was confirmed by Carter Wong.
+                                    </td>
+                                    <td>Mary Deng</td>
+                                </tr>
+                                <tr class="group-row">
+                                    <td colspan="7">
+                                        03/16/2015 Pay attention to the change of equipments.
+                                    </td>
+                                    <td>Mary Deng</td>
+                                </tr>
+                                <tr class="group-row">
+                                    <td colspan="7">
+                                        03/15/2015 Pay attention to the change of equipments.
+                                    </td>
+                                    <td>Mary Deng</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="8">
+                                        <div class="icon-container centered">
+                                            <span class="icon icon-arrow-down"></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Fail</td>
+                                    <td>03/11/2015</td>
+                                    <td>IWD102343</td>
+                                    <td>OVEN2123</td>
+                                    <td>1,000</td>
+                                    <td>92,400</td>
+                                    <td><a href="#">Carter Wong</a></td>
+                                    <td>234 Street</td>
+                                </tr>
+                                <tr class="group-row">
+                                    <td colspan="7">
+                                        03/19/2015 Qty was confirmed by Carter Wong.
+                                    </td>
+                                    <td>Mary Deng</td>
+                                </tr>
+                                <tr class="group-row">
+                                    <td colspan="7">
+                                        03/16/2015 Pay attention to the change of equipments.
+                                    </td>
+                                    <td>Mary Deng</td>
+                                </tr>
+                                <tr class="group-row">
+                                    <td colspan="7">
+                                        03/15/2015 Pay attention to the change of equipments.
+                                    </td>
+                                    <td>Mary Deng</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="8">
+                                        <div class="icon-container centered">
+                                            <span class="icon icon-arrow-down"></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Pending</td>
+                                    <td>02/01/2015</td>
+                                    <td>IWD102343</td>
+                                    <td>OVEN2123</td>
+                                    <td>1,000</td>
+                                    <td>92,400</td>
+                                    <td><a href="#">Carter Wong</a></td>
+                                    <td>234 Street</td>
+                                </tr>
+                                <tr class="group-row">
+                                    <td colspan="7">
+                                        03/19/2015 Qty was confirmed by Carter Wong.
+                                    </td>
+                                    <td>Mary Deng</td>
+                                </tr>
+                                <tr class="group-row">
+                                    <td colspan="7">
+                                        03/16/2015 Pay attention to the change of equipments.
+                                    </td>
+                                    <td>Mary Deng</td>
+                                </tr>
+                                <tr class="group-row">
+                                    <td colspan="7">
+                                        03/15/2015 Pay attention to the change of equipments.
+                                    </td>
+                                    <td>Mary Deng</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="8">
+                                        <div class="icon-container centered">
+                                            <span class="icon icon-arrow-down"></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Pass</td>
+                                    <td>02/01/2015</td>
+                                    <td>IWD102343</td>
+                                    <td>OVEN2132</td>
+                                    <td>1,000</td>
+                                    <td>92,400</td>
+                                    <td><a href="#">Carter Wong</a></td>
+                                    <td>234 Street</td>
+                                </tr>
+                                <tr class="group-row">
+                                    <td colspan="7">
+                                        03/19/2015 Qty was confirmed by Carter Wong.
+                                    </td>
+                                    <td>Mary Deng</td>
+                                </tr>
+                                <tr class="group-row">
+                                    <td colspan="7">
+                                        03/16/2015 Pay attention to the change of equipments.
+                                    </td>
+                                    <td>Mary Deng</td>
+                                </tr>
+                                <tr>
+                                    <td colspan="8">
+                                        <div class="icon-container centered">
+                                            <span class="icon icon-arrow-down"></span>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="padding-container">
+                            <a href="#" class="icon-container--floated-r">
+                                <span class="icon icon-edit"></span>
+                                <span class="icon-inscription">Edit</span>
+                            </a>
+                        </div>
+                    </section>
                 </div>
             </section>
             <section></section>
