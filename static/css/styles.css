@@ -278,6 +278,7 @@ aside,
 
 .clicable-cell {
     transition: all .2s ease-in-out;
+    cursor: pointer;
 }
 
 .clicable-cell:hover {
@@ -323,11 +324,12 @@ aside,
 
 .option-list li {
     display: inline-block;
-    margin-right: 10px;
+    color: #939393;
 }
 
     .option-list li a {
         color: #939393;
+        margin-right: 10px;
     }
 
 .option-list--down {
@@ -342,10 +344,10 @@ aside,
         width: 80%;
         margin-right: auto;
         margin-left: auto;
-
         padding-top: 8px;
         padding-bottom: 8px;
         border-bottom: 1px solid #d5d5d5;
+        transition: all .2s ease-in-out;
     }
 
 
@@ -433,19 +435,47 @@ aside,
 
 /*BUTTONS***********************************************************
 *******************************************************************/
-.btn-simple {
-    border-radius: none;
-    background-color: #fff;
-}
-
-.btn-simple {
+.btn-simple, .nav.nav-pills li a {
     border-radius: 0;
     border: none;
 }
 
+.nav.nav-pills li a {
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
 
+.btn-simple, .nav.nav-pills li.active a {
+    background-color: #fff;
+    color: #ccc;
+}
 
+.btn-simple:hover, .nav.nav-pills li a {
+    background-color: #ccc;
+    color: #fff;
 
+    transition: all .2s ease-in-out;
+}
+
+.nav-pills {
+    margin: 0 auto;
+}
+
+.nav.nav-pills li {
+    width: 40%;
+    float: none;
+    display: inline-block;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.tab-container {
+    padding-left: 2em;
+}
+
+.nav.nav-pills {
+    float: none;
+}
 
 
 
@@ -470,10 +500,3 @@ aside,
     display: inline-block;
 }
 
-.tab-container {
-    padding-left: 2em;
-}
-
-.nav.nav-pills {
-    float: none;
-}
