@@ -273,7 +273,7 @@ aside,
 .navigation-panel {
 	position: fixed;
 	background-color: #efefef;
-	width: 24.5%;
+	width: 23%;
 	padding-right: 10px;
 }
 
@@ -409,3 +409,11 @@ aside,
 	border-radius: 0;
 	border: none;
 }
+
+.clear-right-padding {
+	padding-right: 0;
+}
+
+.addition-padding {
+	padding: 1.5em;
+};
