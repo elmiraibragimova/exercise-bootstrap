@@ -79,9 +79,25 @@ img {
 	overflow: hidden;
 }
 
+.bordered {
+	border-bottom: 1px solid #c3c3c3;
+}
+
+.box {
+	margin-bottom: 2em;
+	padding-bottom: 2em;
+}
+
+.indented-line {
+	text-indent: 1em;
+}
 
 /*BUSINESS-CARD*****************************************************
 *******************************************************************/
+.business-card--aside {
+	margin-bottom: 2em;
+}
+
 .business-card__logo {
 	float: left;
 	width: 100px;
@@ -93,11 +109,22 @@ img {
 	max-width: 600px;
 }
 
+	.business-card__info--aside {
+		clear: both;
+		float: none;
+		margin-top: 1em;
+	}
+
 	.business-card__info div {
 		display: inline;
 		float: left;
 		margin-right: 2em;
 	}
+
+.business-card__title--aside {
+	position: relative;
+	top: 32px;
+}
 
 
 
@@ -134,14 +161,24 @@ img {
 	background-position: 0 -33px;
 }
 
+.icon-arrow-down-lg,
+.icon-arrow-down {
+	cursor: pointer;
+}
+
 .icon-arrow-down {
 	width: 37px;
 	height: 14px;
 	background-position: 0 -205px;
-	cursor: pointer;
-
+	
 	position: relative;
 	top: 3px;
+}
+
+.icon-arrow-down-lg {
+	width: 80px;
+	height: 30px;
+	background-position: 0 -223px;
 }
 
 .icon-clock,
@@ -167,6 +204,10 @@ img {
 	right: 4px;
 	top: 6px;
 	z-index: 10;
+}
+
+.edit-aside {
+	margin-top: -30px;
 }
 
 /*TABLES************************************************************
@@ -217,6 +258,7 @@ img {
 aside {
 	position: relative;
 	padding-bottom: 1em;
+	overflow: hidden;
 	background-color: #efefef;
 }
 
@@ -275,6 +317,8 @@ aside {
 
 
 
+
+
 /*FANCY SCROLLBAR***************************************************
 *******************************************************************/
 /*.fancy-scrollbar { 
@@ -287,22 +331,55 @@ aside {
 	width: 20px;
 } 
 
-
 .fancy-scrollbar::-webkit-scrollbar-track-piece {  
 	background: -webkit-linear-gradient(left, #efefef 0%,#efefef 40%,#ffffff 40%,#ffffff 60%,#efefef 60%,#efefef 100%,#efefef 100%,#efefef 100%); 
 }
 
-
 .fancy-scrollbar::-webkit-scrollbar-thumb:horizontal,
 .fancy-scrollbar::-webkit-scrollbar-thumb:vertical { 
 	background-color: #d8d8d8;
-	width: 20px;
-	height: 50px
 }
 
 
+.fancy-scrollbar--narrow::-webkit-scrollbar {
+	height: 9px; 
+	width: 9px;
+}
+
+.fancy-scrollbar--narrow::-webkit-scrollbar-track-piece {
+	background-color: #d8d8d8;
+}
+
+.fancy-scrollbar--narrow::-webkit-scrollbar-thumb:horizontal,
+.fancy-scrollbar--narrow::-webkit-scrollbar-thumb:vertical { 
+	background-color: #bbb;
+}
+
+
+/*ADDITION INFO AREA************************************************
+*******************************************************************/
+/*LISTS*/
+.notes-list {
+	height: 190px;
+	padding: 10px;
+	border: 1px solid #c3c3c3;
+	border-radius: 3px;
+	background-color: #fff;
+	overflow: auto;
+}
+
+	.notes-list li {
+		overflow: hidden;
+	}
+
+	.notes-list p {
+		margin-bottom: .5em;
+	}
 
 
 
-
+.notes-container {
+	position: relative;
+	margin-top: 2em;
+}
 
