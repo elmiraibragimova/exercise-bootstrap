@@ -15,7 +15,7 @@ body {
 
 header {
 	border: 1px solid #d6d6d6;
-	padding: 2em;
+	padding: 0 2em 2em;
 	padding-bottom: 10px;
 	margin-bottom: 2em;
 	overflow: hidden;
@@ -29,6 +29,12 @@ img {
 	max-width: 100%;
 }
 
+aside {
+	position: relative;
+	padding-bottom: 1em;
+	overflow: hidden;
+}
+
 aside,
 .main {
 	padding-top: 1.5em;
@@ -39,7 +45,7 @@ aside,
 }
 
 .page {
-	/*margin-top: 1.5em;*/
+	padding-right: 15px;
 }
 
 .centered {
@@ -164,6 +170,8 @@ aside,
 	width: 46px;
 	height: 25px;
 	background-position: 0 -25px;
+	position: relative;
+	top: 2em;
 }
 
 .icon-arrow-down-lg,
@@ -215,6 +223,8 @@ aside,
 	margin-top: -30px;
 }
 
+
+
 /*TABLES************************************************************
 *******************************************************************/
 .order-table {
@@ -260,10 +270,11 @@ aside,
 		
 /*NAVIGATION AREA***************************************************
 *******************************************************************/
-aside {
-	position: relative;
-	padding-bottom: 1em;
-	overflow: hidden;
+.navigation-panel {
+	position: fixed;
+	background-color: #efefef;
+	width: 24.5%;
+	padding-right: 10px;
 }
 
 .input-common {
@@ -386,4 +397,3 @@ aside {
 	position: relative;
 	margin-top: 2em;
 }
-
