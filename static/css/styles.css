@@ -1,6 +1,9 @@
 /*CONTENT***************************
 
 	*BASIC
+	*BUSINESS-CARD
+	*ICONS
+	*TABLES
 
 */
 
@@ -37,8 +40,46 @@ img {
 
 
 .padding-container {
+	position: relative;
 	padding: 1.5em 15px;
+	overflow: hidden;
 }
+
+
+
+.align-center {
+	text-align: center;
+}
+
+.floated-r {
+	clear: both;
+	float: right;
+}
+
+.floated-l {
+	clear: both;
+	float: left;
+}
+
+.absolute-l {
+	position: absolute;
+	left: 0;
+	top: 36px;
+	margin-left: 15px;
+}
+
+.absolute-r {
+	position: absolute;
+	right: 0;
+	top: 36px;
+	margin-right: 15px;
+}
+
+/*.main-heading {
+	position: absolute;
+	top: 0;
+	left: 0;
+}*/
 
 
 
@@ -71,19 +112,12 @@ img {
 	background-image: url("../images/sprite.png");
 }
 
+
+
 .icon-container:hover {
 	text-decoration: none;
 }
 
-.icon-container--floated-r {
-	clear: both;
-	float: right;
-}
-
-.icon-container--floated-l {
-	clear: both;
-	float: left;
-}
 
 .icon-inscription {
 	position: relative;
@@ -181,4 +215,8 @@ img {
 	padding-bottom: 1.5em;
 	margin-bottom: 1.5em;
 	overflow: hidden;
+}
+
+.new-div {
+	display: inline-block;
 }
