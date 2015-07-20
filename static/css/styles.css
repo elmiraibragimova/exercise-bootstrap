@@ -397,3 +397,15 @@ aside,
 	position: relative;
 	margin-top: 2em;
 }
+
+/*BUTTONS***********************************************************
+*******************************************************************/
+.btn-simple {
+	border-radius: none;
+	background-color: #fff;
+}
+
+.btn-simple {
+	border-radius: 0;
+	border: none;
+}
