@@ -38,14 +38,11 @@ img {
 	margin-left: auto;
 }
 
-
 .padding-container {
 	position: relative;
 	padding: 1.5em 15px;
 	overflow: hidden;
 }
-
-
 
 .align-center {
 	text-align: center;
@@ -75,13 +72,12 @@ img {
 	margin-right: 15px;
 }
 
-/*.main-heading {
-	position: absolute;
-	top: 0;
-	left: 0;
-}*/
-
-
+.content {
+	border: 1px solid #ddd;
+	padding-bottom: 1.5em;
+	margin-bottom: 1.5em;
+	overflow: hidden;
+}
 
 
 /*BUSINESS-CARD*****************************************************
@@ -112,12 +108,9 @@ img {
 	background-image: url("../images/sprite.png");
 }
 
-
-
 .icon-container:hover {
 	text-decoration: none;
 }
-
 
 .icon-inscription {
 	position: relative;
@@ -165,6 +158,16 @@ img {
 	background-position: 0 -159px;
 }
 
+.icon-lens {
+	width: 29px;
+	height: 29px;
+	background-position: 0 0;
+
+	position: absolute;
+	right: 4px;
+	top: 6px;
+	z-index: 10;
+}
 
 /*TABLES************************************************************
 *******************************************************************/
@@ -209,14 +212,97 @@ img {
 	}
 
 		
-
-.content {
-	border: 1px solid #ddd;
-	padding-bottom: 1.5em;
-	margin-bottom: 1.5em;
-	overflow: hidden;
+/*NAVIGATION AREA***************************************************
+*******************************************************************/
+aside {
+	position: relative;
+	padding-bottom: 1em;
+	background-color: #efefef;
 }
 
-.new-div {
+.input-common {
+	width: 17em;
+	padding: 8px 32px 8px 10px;
+}
+
+.input-container {
+	position: relative;
+	width: 17em;
+	padding-bottom: 1em;
+	border-bottom: 1px solid #c3c3c3;
+}
+
+/*LISTS*/
+.list-container {
+	position: relative;
+	margin-top: 1em;
+	text-align: center;
+
+	overflow: auto;
+	height: 80vh;
+}
+
+.option-list {
+	margin-top: 1em;
+}
+
+.option-list li {
 	display: inline-block;
+	margin-right: 10px;
 }
+
+	.option-list li a {
+		color: #939393;
+	}
+
+.option-list--down {
+	margin-left: 15px;
+}
+
+.list-name {
+	margin-top: 1em;
+}
+
+	.list-name li {
+		width: 80%;
+		margin-right: auto;
+		margin-left: auto;
+
+		padding-top: 8px;
+		padding-bottom: 8px;
+		border-bottom: 1px solid #d5d5d5;
+	}
+
+
+
+/*FANCY SCROLLBAR***************************************************
+*******************************************************************/
+/*.fancy-scrollbar { 
+	-webkit-overflow-scrolling: touch;
+	-webkit-transform:translate3d(0,0,0)
+}*/
+
+.fancy-scrollbar::-webkit-scrollbar { 
+	height: 20px; 
+	width: 20px;
+} 
+
+
+.fancy-scrollbar::-webkit-scrollbar-track-piece {  
+	background: -webkit-linear-gradient(left, #efefef 0%,#efefef 40%,#ffffff 40%,#ffffff 60%,#efefef 60%,#efefef 100%,#efefef 100%,#efefef 100%); 
+}
+
+
+.fancy-scrollbar::-webkit-scrollbar-thumb:horizontal,
+.fancy-scrollbar::-webkit-scrollbar-thumb:vertical { 
+	background-color: #d8d8d8;
+	width: 20px;
+	height: 50px
+}
+
+
+
+
+
+
+
