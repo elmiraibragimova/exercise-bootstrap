@@ -1,0 +1,479 @@
+/*CONTENT***************************
+
+    *BASIC
+    *BUSINESS-CARD
+    *ICONS
+    *TABLES
+
+*/
+
+/*BASIC************************************************************
+*******************************************************************/
+body {
+    color: #444;
+}
+
+header {
+    border: 1px solid #d6d6d6;
+    padding: 0 2em 2em;
+    padding-bottom: 10px;
+    margin-bottom: 2em;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+img {
+    max-width: 100%;
+}
+
+aside {
+    position: relative;
+    padding-bottom: 1em;
+    overflow: hidden;
+}
+
+aside,
+.main {
+    padding-top: 1.5em;
+}
+
+.panel-bg-color {
+    background-color: #efefef;
+}
+
+.page {
+    padding-right: 15px;
+}
+
+.centered {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.padding-container {
+    position: relative;
+    padding: 1.5em 15px;
+    overflow: hidden;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.clear {
+    clear: both;
+}
+
+.absolute-l,
+.absolute-r {
+    position: absolute;
+    top: 41px;
+    margin-left: 15px;
+}
+
+.absolute-r {
+    right: 0;
+    margin-right: 15px;
+}
+
+.absolute-l {
+    left: 0;
+}
+
+.content {
+    border: 1px solid #ddd;
+    padding-bottom: 1.5em;
+    margin-bottom: 1.5em;
+    overflow: hidden;
+}
+
+.bordered {
+    border-bottom: 1px solid #c3c3c3;
+}
+
+.box {
+    margin-bottom: 2em;
+    padding-bottom: 2em;
+}
+
+.indented-line {
+    text-indent: 1em;
+}
+
+/*BUSINESS-CARD*****************************************************
+*******************************************************************/
+.business-card--aside {
+    margin-bottom: 2em;
+}
+
+.business-card__logo {
+    float: left;
+    width: 100px;
+    margin-right: 2em;
+}
+
+.business-card__info {
+    float: left;
+    max-width: 600px;
+}
+
+    .business-card__info--aside {
+        clear: both;
+        float: none;
+        margin-top: 1em;
+    }
+
+    .business-card__info div {
+        display: inline;
+        float: left;
+        margin-right: 2em;
+    }
+
+.business-card__title--aside {
+    position: relative;
+    top: 32px;
+}
+
+
+
+/*ICONS*************************************************************
+*******************************************************************/
+.icon {
+    display: inline-block;
+    background-image: url("../images/sprite.png");
+}
+
+.icon-container:hover {
+    text-decoration: none;
+}
+
+.icon-inscription {
+    position: relative;
+    top: -11px;
+    margin-left: 2px;
+}
+
+    .icon-inscription--down {
+        top: -5px;
+    }
+
+.icon-edit {
+    width: 28px;
+    height: 28px;
+    background-position: 0 -54px;
+}
+
+.icon-arrow {
+    width: 46px;
+    height: 25px;
+    background-position: 0 -25px;
+    position: relative;
+    top: 2em;
+}
+
+.icon-arrow-down-lg,
+.icon-arrow-down {
+    cursor: pointer;
+}
+
+.icon-arrow-down {
+    width: 27px;
+    height: 10px;
+    background-position: 0 -154px;
+    
+    position: relative;
+    top: 3px;
+}
+
+.icon-arrow-down-lg {
+    width: 59px;
+    height: 22px;
+    background-position: 0 -167px;
+}
+
+.icon-clock,
+.icon-plus {
+    width: 32px;
+    height: 32px;
+}
+
+.icon-clock {
+    background-position: 0 -85px;
+}
+
+.icon-plus {
+    background-position: 0 -119px;
+}
+
+.icon-lens {
+    width: 22px;
+    height: 22px;
+    background-position: 0 0;
+
+    position: absolute;
+    right: 9px;
+    top: 9px;
+    z-index: 10;
+}
+
+.edit-aside {
+    margin-top: -30px;
+}
+
+
+
+/*TABLES************************************************************
+*******************************************************************/
+.order-table {
+    text-align: center;
+    margin-bottom: 15em;
+}
+
+    .order-table tr td:first-child,
+    .order-table tr th:first-child {
+        border-left-color: transparent;
+    }
+
+    .order-table tr td:last-child,
+    .order-table tr th:last-child {
+        border-right-color: transparent;
+    }
+
+    .order-table tr:last-child td {
+        border-bottom-color: transparent;
+    }
+
+    .order-table th {
+        background-color: #f2f2f2;
+        text-align: center;
+    }
+
+.group-row td {
+    color: #939393;
+}
+
+    .group-row td:first-child {
+        text-align: left;
+        padding-left: 2.5em;
+        border-right-color: transparent;
+    }
+
+    .group-row td:nth-child(n) {
+        border-bottom-color: transparent;
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+
+/*HREFS*/
+.order-table a {
+    color: #444;
+}
+
+.order-table a:hover {
+    text-decoration: none;
+}
+
+.clicable-cell {
+    transition: all .2s ease-in-out;
+}
+
+.clicable-cell:hover {
+    background-color: #b9e986;
+}
+
+
+        
+/*NAVIGATION AREA***************************************************
+*******************************************************************/
+.navigation-panel {
+    position: fixed;
+    background-color: #efefef;
+    width: 23%;
+    padding-right: 10px;
+}
+
+.input-common {
+    width: 17em;
+    padding: 8px 32px 8px 10px;
+}
+
+.input-container {
+    position: relative;
+    width: 17em;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #c3c3c3;
+}
+
+/*LISTS*/
+.list-container {
+    position: relative;
+    margin-top: 1em;
+    text-align: center;
+
+    overflow: auto;
+    height: 80vh;
+}
+
+.option-list {
+    margin-top: 1em;
+}
+
+.option-list li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+    .option-list li a {
+        color: #939393;
+    }
+
+.option-list--down {
+    margin-left: 15px;
+}
+
+.list-name {
+    margin-top: 1em;
+}
+
+    .list-name li {
+        width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+
+        padding-top: 8px;
+        padding-bottom: 8px;
+        border-bottom: 1px solid #d5d5d5;
+    }
+
+
+/*HREFS*/
+    .list-name li:hover {
+        background-color: #b9e986;
+        cursor: pointer;
+    }
+
+    .list-name li a {
+        color: #444;
+    }
+
+    .list-name li a:hover {
+        text-decoration: none;
+    }
+
+
+
+
+
+/*FANCY SCROLLBAR***************************************************
+*******************************************************************/
+/*.fancy-scrollbar { 
+    -webkit-overflow-scrolling: touch;
+    -webkit-transform:translate3d(0,0,0)
+}*/
+
+.fancy-scrollbar::-webkit-scrollbar { 
+    height: 20px; 
+    width: 20px;
+} 
+
+.fancy-scrollbar::-webkit-scrollbar-track-piece {  
+    background: -webkit-linear-gradient(left, #efefef 0%,#efefef 40%,#ffffff 40%,#ffffff 60%,#efefef 60%,#efefef 100%,#efefef 100%,#efefef 100%); 
+}
+
+.fancy-scrollbar::-webkit-scrollbar-thumb:horizontal,
+.fancy-scrollbar::-webkit-scrollbar-thumb:vertical { 
+    background-color: #d8d8d8;
+}
+
+
+.fancy-scrollbar--narrow::-webkit-scrollbar {
+    height: 9px; 
+    width: 9px;
+}
+
+.fancy-scrollbar--narrow::-webkit-scrollbar-track-piece {
+    background-color: #d8d8d8;
+}
+
+.fancy-scrollbar--narrow::-webkit-scrollbar-thumb:horizontal,
+.fancy-scrollbar--narrow::-webkit-scrollbar-thumb:vertical { 
+    background-color: #bbb;
+}
+
+
+/*ADDITION INFO AREA************************************************
+*******************************************************************/
+/*LISTS*/
+.notes-list {
+    height: 190px;
+    padding: 10px;
+    border: 1px solid #c3c3c3;
+    border-radius: 3px;
+    background-color: #fff;
+    overflow: auto;
+}
+
+    .notes-list li {
+        overflow: hidden;
+    }
+
+    .notes-list p {
+        margin-bottom: .5em;
+    }
+
+
+
+.notes-container {
+    position: relative;
+    margin-top: 2em;
+}
+
+/*BUTTONS***********************************************************
+*******************************************************************/
+.btn-simple {
+    border-radius: none;
+    background-color: #fff;
+}
+
+.btn-simple {
+    border-radius: 0;
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+
+.clear-right-padding {
+    padding-right: 0;
+}
+
+.addition-padding {
+    padding: 1.5em;
+}
+
+
+
+
+
+
+.active--simple a {
+    background-color: #d8d8d8;
+    display: inline-block;
+}
+
+.tab-container {
+    padding-left: 2em;
+}
+
+.nav.nav-pills {
+    float: none;
+}
