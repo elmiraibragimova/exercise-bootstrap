@@ -325,11 +325,12 @@ aside,
 .option-list li {
     display: inline-block;
     color: #939393;
+    margin-right: 5px;
 }
 
     .option-list li a {
         color: #939393;
-        margin-right: 10px;
+        margin-right: 5px;
     }
 
 .option-list--down {
