@@ -295,6 +295,26 @@ aside,
         padding-bottom: 3px;
     }
 
+.group-row td {
+    position: relative;
+}
+
+hr {
+    position: absolute;
+    right: 0;
+    top: -7px;
+    width: 90%;
+    border-top: 2px solid #f7f7f7;
+}
+
+.group-row p {
+    position: absolute;
+    left: 35px;
+    top: 3px;
+    background-color: #fff;
+    padding-right: 5px;
+}
+
 /*HREFS*/
 .order-table a {
     color: #444;
@@ -559,4 +579,3 @@ aside,
 .js-hidden {
     display: none;
 }
-
