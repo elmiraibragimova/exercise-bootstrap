@@ -505,6 +505,46 @@ aside,
     display: inline-block;
 }
 
+.btn-hide-left-panel,
+.btn-hide-right-panel {
+    width: 20px;
+    height: 50px;
+    position: fixed;
+    top: 50%;
+    margin-top: -25px;
+    z-index: 20;
+    background-color: #efefef;
+    cursor: pointer;
+}
 
+.btn-hide-left-panel {
+    left: 23%;
+    
+}
 
+.btn-hide-right-panel {
+    width: 25px;
+    right: 23.7%;
+}
 
+.btn-hide-left-panel:before,
+.btn-hide-left-panel:after,
+.btn-hide-right-panel:before,
+.btn-hide-right-panel:after {
+    content: " ";
+    width: 3px;
+    height: 40px;
+    position: absolute;
+    top: 5px;
+    background-color: #fff;
+}
+
+.btn-hide-left-panel:after,
+.btn-hide-right-panel:after {
+    left: 12px;
+}
+
+.btn-hide-left-panel:before,
+.btn-hide-right-panel:before {
+    left: 5px;
+}
