@@ -320,6 +320,7 @@ aside,
     position: fixed;
     background-color: #efefef;
     width: 23%;
+    height: 100vh;
     padding-right: 10px;
 }
 
