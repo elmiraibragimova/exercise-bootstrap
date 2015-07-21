@@ -243,6 +243,7 @@ aside,
     right: 9px;
     top: 9px;
     z-index: 10;
+    cursor: pointer;
 }
 
 .edit-aside {
@@ -303,15 +304,16 @@ aside,
     text-decoration: none;
 }
 
-.clicable-cell {
+.clicable-cell,
+.clicable-row:hover td {
     transition: all .2s ease-in-out;
     cursor: pointer;
 }
 
-.clicable-cell:hover {
+.clicable-cell:hover,
+.clicable-row:hover td {
     background-color: #b9e986;
 }
-
 
         
 /*NAVIGATION AREA***************************************************
