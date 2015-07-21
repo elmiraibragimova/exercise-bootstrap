@@ -1,3 +1,4 @@
+// To open/hide navigation-panel
 $('.btn-hide-left-panel').click(function() {
     
     var $panel = $('.navigation-panel'),
@@ -15,6 +16,7 @@ $('.btn-hide-left-panel').click(function() {
     $panel.toggle(0, fixMainPanelWidth);
 });
 
+// To open/hide addition-panel
 $('.btn-hide-right-panel').click(function() {
     var $panel = $('.addition-info'),
         $btnHide = $('.btn-hide-right-panel');
@@ -41,7 +43,14 @@ function fixMainPanelWidth() {
     $('#main').removeClass('col-md-6 col-md-9 col-md-12').addClass('col-md-' + cols);
 }
 
-
+// To open hidden table row
+$('.js-uncap').click(function() {
+    var group = $(this).data('group');
+    $('.js-hidden[data-group="' + group + '"]').removeClass('js-hidden');
+    $(this).removeClass('clicable-row');
+    $(this).find('.icon-container').remove();
+    $(this).find('.js-view-more').remove();
+});
 
 
 
